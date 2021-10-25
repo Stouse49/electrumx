@@ -251,3 +251,6 @@ class Goldcoin(Coin):
     PEERS = [
         
     ]
+    CHAIN_SIZE = 623_944_264_227
+    CHAIN_SIZE_HEIGHT = 1_500_000
+    AVG_BLOCK_SIZE = 32_000_000
