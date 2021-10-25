@@ -231,3 +231,23 @@ class BitcoinSVRegtest(BitcoinSVTestnet):
 
 
 Bitcoin = BitcoinSV
+
+class Goldcoin(Coin):
+    NAME = "Goldcoin"
+    SHORTNAME = "GLC"
+    NET = "mainnet"
+    XPUB_VERBYTES = bytes.fromhex("0488b21e")
+    XPRV_VERBYTES = bytes.fromhex("0488ade4")
+    P2PKH_VERBYTE = bytes.fromhex("20")
+    P2SH_VERBYTES = [bytes.fromhex("32"), bytes.fromhex("05")]
+    WIF_BYTE = bytes.fromhex("94")
+    GENESIS_HASH = ('dced3542896ed537cb06f9cb064319ad'
+                    'b0da615f64dd8c5e5bad974398f44b24')
+    TX_COUNT = 2130342
+    TX_COUNT_HEIGHT = 1487019
+    TX_PER_BLOCK = 10
+    RPC_PORT = 9332
+    REORG_LIMIT = 800
+    PEERS = [
+        
+    ]
